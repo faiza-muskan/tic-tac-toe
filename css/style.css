@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .container {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    display: block;
+  }
+}
+.container .game {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: 300px;
+  gap: 10px;
+  width: 920px;
+  margin-left: 50px;
+  position: relative;
+  margin-top: 12.5px;
+}
+@media (max-width: 767px) {
+  .container .game {
+    grid-template-columns: repeat(3, 115px);
+    grid-auto-rows: 115px;
+    gap: 5px;
+    width: 360px;
+    margin: auto;
+    margin-top: 12.5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .game {
+    grid-template-columns: repeat(3, 200px);
+    grid-auto-rows: 200px;
+    width: 600px;
+    margin: auto;
+    margin-top: 15px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container .game {
+    grid-template-columns: repeat(3, 170px);
+    grid-auto-rows: 170px;
+    width: 520px;
+    margin-left: 35px;
+    margin-top: 35px;
+  }
+}
+.container .game .symbol {
+  color: white;
+  font-size: 200px;
+  text-align: center;
+  line-height: 300px;
+}
+@media (max-width: 767px) {
+  .container .game .symbol {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .game .symbol {
+    font-size: 200px;
+    line-height: 170px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container .game .symbol {
+    line-height: 150px;
+  }
+}
+.container .game .banner {
+  position: absolute;
+  background-color: #7575ec;
+  width: 920px;
+  margin: auto;
+  height: 400px;
+  margin-top: 250px;
+  opacity: 0.8;
+}
+@media (max-width: 767px) {
+  .container .game .banner {
+    width: 330px;
+    height: 125px;
+    margin-top: 120px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .game .banner {
+    width: 620px;
+    height: 220px;
+    margin-top: 200px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container .game .banner {
+    width: 525px;
+    height: 220px;
+    margin-top: 160px;
+  }
+}
+.container .game .cells {
+  background-color: #3535ec;
+}
+.container .game h1 {
+  color: white;
+  text-align: center;
+  line-height: 500px;
+  line-height: 420px;
+}
+@media (max-width: 767px) {
+  .container .game h1 {
+    line-height: 125px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .game h1 {
+    line-height: 220px;
+  }
+}
+.container .rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 85px;
+  line-height: 1.2;
+  color: #3535ec;
+}
+@media (max-width: 767px) {
+  .container .rules {
+    max-width: 330px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .container .rules h1 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .rules {
+    max-width: 660px;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container .rules {
+    margin-left: 60px;
+  }
+}
+.container .rules ul {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+.container .rules ul li {
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .container .rules ul li {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container .rules ul {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
